@@ -1,0 +1,17 @@
+<h2>
+    {{'@if() e @else'}}
+</h2>
+
+<mat-slide-toggle [(ngModel)]="slideToggleValue">
+    Alternar valor booleano
+</mat-slide-toggle>
+
+@if (slideToggleValue) {
+<p>
+    A condição está como verdadeira
+</p>
+} @else {
+<p>
+    A condição está como falsa
+</p>
+}
